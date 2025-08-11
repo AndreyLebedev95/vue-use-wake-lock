@@ -74,4 +74,4 @@ Modern browsers supporting the [Wake Lock API](https://developer.mozilla.org/en-
 
 ## 📄 License
 
-[https://github.com/AndreyLebedev95/vue-use-wake-lock/blob/main/LICENSE](MIT License) © 2025-PRESENT Andrei Lebedev
+[MIT License](https://github.com/AndreyLebedev95/vue-use-wake-lock/blob/main/LICENSE) © 2025-PRESENT Andrei Lebedev
