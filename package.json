@@ -1,11 +1,16 @@
 {
   "name": "vue-use-wake-lock",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -14,10 +19,11 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
-    "vue": "^3.5.18"
+    "vue": "^3.5.0"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
@@ -37,6 +43,7 @@
     "prettier": "3.6.2",
     "typescript": "~5.8.0",
     "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4",
     "vite-plugin-vue-devtools": "^8.0.0",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.0.4"
