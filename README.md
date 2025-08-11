@@ -52,8 +52,8 @@ const disableWakeLock = async () => {
 
 ## 📚 Hook return values
 
-| Property / Method     | Type                                             | Description                                                                  |     |
-| --------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- | --- |
+| Property / Method     | Type                                             | Description                                                                  | 
+| --------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- |
 | `wakeLockSentinel`    | `Ref<WakeLockSentinel \| null>`                  | Reactive reference to the Wake Lock sentinel instance                        |
 | `active`              | `ComputedRef<boolean>`                           | Indicates whether the Wake Lock is currently active                          |     |
 | `supported`           | `boolean`                                        | Whether the Wake Lock API is supported in the browser                        |     |
