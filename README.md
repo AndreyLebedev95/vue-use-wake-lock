@@ -1,4 +1,4 @@
-# ⚡️ vue-use-wake-lock
+# ⚡️ useWakeLock
 
 useWakeLock is the lightweight Vue 3 hook for managing the Wake Lock API — prevents your device from going to sleep.
 
