@@ -1,20 +1,21 @@
 {
   "name": "vue-use-wake-lock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
-  "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-p type-check \"build-only {@}\" -- && esbuild dist/index.es.js --allow-overwrite --minify --legal-comments=none --outfile=dist/index.es.js",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
@@ -36,6 +37,7 @@
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
+    "esbuild": "^0.25.8",
     "eslint": "^9.31.0",
     "eslint-plugin-vue": "~10.3.0",
     "jiti": "^2.4.2",
