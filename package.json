@@ -1,6 +1,6 @@
 {
   "name": "vue-use-wake-lock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -13,6 +13,23 @@
     "LICENSE"
   ],
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "wake-lock",
+    "screen-wake-lock-api",
+    "wake",
+    "prevent-sleep",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreylebedev95/vue-use-wake-lock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreylebedev95/vue-use-wake-lock/issues"
+  },
+  "homepage": "https://github.com/andreylebedev95/vue-use-wake-lock#readme",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" -- && esbuild dist/index.es.js --allow-overwrite --minify --legal-comments=none --outfile=dist/index.es.js",
